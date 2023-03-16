@@ -1,60 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Menu</title>
-    <link href="styles.css" rel="stylesheet"/>
+    <title>Certification Project</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="menu">
-      <main>
-        <h1>CAMPER CAFE</h1>
-        <p class="established">Est. 2020</p>
-        <hr>
-        <section>
-          <h2>Coffee</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-          <article class="item">
-            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Mocha</p><p class="price">4.50</p>
-          </article>
-        </section>
-        <section>
-          <h2>Desserts</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
-          <article class="item">
-            <p class="dessert">Donut</p><p class="price">1.50</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
-          </article>
-        </section>
-      </main>
-      <hr class="bottom-line">
-      <footer>
-        <p>
-          <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
-        </p>
-        <p class="address">123 Free Code Camp Drive</p>
-      </footer>
-    </div>
+    <h1 id="title">Small Cock Club</h1>
+    <p id="description">Please fill out the form with required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input type="text" id="name" placeholder="Joe" required/></label>
+        <label for="email" id="email-label">Enter Your E-mail: <input type="email" id="email" placeholder="ihavesmallcock@gmail.con" required/></label>
+        <label for="number" id="number-label">Enter Your Age: <input type="number" id="number" pattern="[0-9]" min="12" max="120" placeholder="5"></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Balls?
+          <select name="dropdown" id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">yes.</option>
+            <option value="2">YEEES.</option>
+            <option value="3">YAAHH-YAAHH.</option>
+          </select>
+        </label>
+        <label for="cat"><input type="radio" id="cat" name="pet" value="cat" class="inline"> Cat</label>
+        <label for="dog"><input type="radio" id="dog" name="pet" value="dog
+          " class="inline"> Dog</label>
+      </fieldset>
+      <fieldset>
+        <label for="1"><input id="1" type="checkbox" value="1" class="inline"> 1</label>
+        <label for="2"><input id="2" type="checkbox" value="2" class="inline"> 2</label>
+        <label for="3"><input id="3" type="checkbox" value="3" class="inline"> 3</label>
+        <label for="4"><input id="4" type="checkbox" value="4" class="inline"> 4</label>
+        <label for="5"><input id="5" type="checkbox" value="5" class="inline"> 5</label>
+      </fieldset>
+      <fieldset>
+        <textarea name="bio" id="bio" cols="30" rows="3" placeholder="I like dogs, cats and balls..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Let's go">
+    </form>
   </body>
 </html>
+
